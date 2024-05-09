@@ -30,6 +30,7 @@ function generateTeamCards() {
     teamMembers.forEach(member => {
         const card = document.createElement('div')
         card.classList.add('col-12', 'col-md-6', 'col-lg-4')
+        card.setAttribute("id", `card-container${i}`)
 
         //style card based on role
         let backgroundColor
@@ -64,27 +65,33 @@ function generateTeamCards() {
 window.onload = generateTeamCards()
 
 function flipCard(cardNumber) {
-    document.getElementById(`card${cardNumber}`).classList.add('flip-card')
+    document.getElementById(`card-container${cardNumber}`).classList.add('flip-card')
+    document.getElementById(`card-container${cardNumber}`).classList.remove('unflip-card')
     document.getElementById(`card${cardNumber}`).setAttribute("onmouseover", "")
     document.getElementById(`card${cardNumber}`).setAttribute("onmouseleave", `unflipCard(${cardNumber})`)
     const member = teamMembers[cardNumber]
-    document.getElementById(`card${cardNumber}`).innerHTML = `
-        <div class="card-header">
-            Name: ${member.name}
-        </div>
-        <div class="card-body">
-            <p>Age: ${member.age}</p>
-        </div>`
+    setTimeout(() => {
+        document.getElementById(`card${cardNumber}`).innerHTML = `
+            <div class="card-header">
+                Name: ${member.name}
+            </div>
+            <div class="card-body">
+                <p>Age: ${member.age}</p>
+            </div>`
+    }, 1000);
 }
 
 function unflipCard(cardNumber) {
-    document.getElementById(`card${cardNumber}`).classList.remove('flip-card')
+    document.getElementById(`card-container${cardNumber}`).classList.remove('flip-card')
+    document.getElementById(`card-container${cardNumber}`).classList.add('unflip-card')
     document.getElementById(`card${cardNumber}`).setAttribute("onmouseleave", "")
     document.getElementById(`card${cardNumber}`).setAttribute("onmouseover", `flipCard(${cardNumber})`)
     const member = teamMembers[cardNumber]
+    setTimeout(() => {
     document.getElementById(`card${cardNumber}`).innerHTML = `
         <div class="text-center">
             <h1>${member.name}</h1>
             <img src="${member.image}" class="w-100">
         </div>`
+    }, 1000);
 }

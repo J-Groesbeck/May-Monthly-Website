@@ -1,0 +1,25 @@
+.flip-card {
+    animation: flipAnimation 2s ease-in-out;
+}
+
+@keyframes flipAnimation {
+    from {
+        transform: rotateY(180deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.unflip-card {
+    animation: unflipAnimation 2s ease-in-out;
+}
+
+@keyframes unflipAnimation {
+    from {
+        transform: rotateY(180deg);
+    }
+    to {
+        transform: rotateY(0deg);
+    }
+}
