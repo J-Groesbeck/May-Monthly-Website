@@ -7,7 +7,7 @@ const teamMembers = [
         title: 'King Of The Gods',
         domains: ['Lightning', 'Sky', 'Order'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: ''
+        otherinfo: `One of the Great Three gods, and leader of the Olympic gods. He is also known to have had several affairs, much to Hera's anger.`
     },
     {
         name: 'Hades',
@@ -15,7 +15,7 @@ const teamMembers = [
         title: 'King Of The Dead',
         domains: ['The Dead', 'The Underworld', 'Funerals'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: ''
+        otherinfo: 'One of the Great Three gods, the ruler of the underworld, and leader of the Chthonic gods. Notably, however, there are many Chthonic gods who do not follow his rule, as the underworld is a vast place.'
     },
     {
         name: 'Poseidon',
@@ -23,7 +23,7 @@ const teamMembers = [
         title: 'King Of The Oceans',
         domains: ['Water', 'Storms', 'Horses'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: ''
+        otherinfo: 'One of the Great Three gods, holding power over the vast oceans. He is the god of horses because he created them as a gift for a city deciding on their patron god.'
     },
     {
         name: 'Nyx',
@@ -31,7 +31,7 @@ const teamMembers = [
         title: 'Personification Of Night',
         domains: ['Night', 'Darkness'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: ''
+        otherinfo: 'Oftentimes considered one of the most powerful gods, she is a primordial god who strikes fear into the hearts of those who even just hear her name.'
     },
     {
         name: 'Hera',
@@ -39,7 +39,7 @@ const teamMembers = [
         title: 'Queen Of The Gods',
         domains: ['Marriage', 'Womanhood', 'Family'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: ''
+        otherinfo: 'She was actually tricked by Zeus into marrying him, after which he would cheat on her repeatedly. Stories of her revenge against him are commonplace in mythology.'
     },
     {
         name: 'Demeter',
@@ -47,15 +47,15 @@ const teamMembers = [
         title: 'The Fruitbearer',
         domains: ['Harvest', 'Fertility of the Earth', 'The Seasons'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: ''
+        otherinfo: 'She represents the seasons through her cyclic grief over her daughter, Persephone. The greeks believed that the lack of plant growth in autumn & winter was caused by her grief while Persephone was in the underworld. '
     },
     {
         name: 'Hestia',
         classification: 'Olympic',
         title: 'Keeper Of Hearth And Home',
-        domains: ['The Hearth', 'Sacred Fire', 'Family'],
+        domains: ['The Hearth', 'Sacred Fire', 'Sacrifice'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: ''
+        otherinfo: 'Often disinterested with the affairs of the gods, she focused more on the people of Greece. She became the god of sacrifices when she swore to remain a maiden forever while Apollo and Poseidon were vying for her hand in marriage.'
     },
     {
         name: 'Artemis',
@@ -63,7 +63,7 @@ const teamMembers = [
         title: 'Personification Of The Hunt',
         domains: ['Hunting', 'Wildlife', 'Nature'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: ''
+        otherinfo: 'She, with her twin brother Apollo, hunted and killed the titan Tityus for sexually assaulting their mother. She also was known for her forbidden love with Orion, a mortal hunter she found interesting.'
     },
     {
         name: 'Ares',
@@ -71,7 +71,7 @@ const teamMembers = [
         title: 'Battle Incarnate',
         domains: ['War', 'Courage', 'Bloodlust'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: ''
+        otherinfo: 'Worshipped often by the militaristic societies of Greece (like Sparta), he was often a disliked god. His most famous myth is his fight with Heracles, a result of Heracles killing his son.'
     },
     {
         name: 'Athena',
@@ -79,7 +79,7 @@ const teamMembers = [
         title: 'Protector Of The People',
         domains: ['Wisdom', 'Strategy', 'Virginity'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: ''
+        otherinfo: `She was presented as extraordinarily intelligent in myth, having been born fully formed from Zeus' forehead. She has many myths of cursing those who wronged her, like the story of Arachne.`
     },
     {
         name: 'Hermes',
@@ -127,7 +127,7 @@ const teamMembers = [
         title: 'Witch Of The Crosswords',
         domains: ['Magic', 'Witchcraft', 'Necromancy'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: ''
+        otherinfo: 'Although technically a Titan, she is often viewed more as chthonic, due to her lack of association with other titans.'
     },
     {
         name: 'The Furies',
@@ -167,7 +167,7 @@ const teamMembers = [
         title: 'King Of The Titans',
         domains: ['Time', 'Cycles', 'Evil'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: ''
+        otherinfo: 'Considered by far the most evil in Greek Mythology, he has waged war with the other Gods, only being defeated with the combined power of the Great Three.'
     },
     {
         name: 'Selene',
@@ -175,7 +175,7 @@ const teamMembers = [
         title: 'Bringer Of Nighttime',
         domains: ['The Moon', 'Radiance', 'Insanity'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: ''
+        otherinfo: 'She drags the Moon across the sky with a chariot each night.'
     },
     {
         name: 'Helios/Apollo',
@@ -183,7 +183,7 @@ const teamMembers = [
         title: 'Bringer Of Daytime',
         domains: ['The Sun', 'Archery', 'Prophecy'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: ''
+        otherinfo: 'He drags the Sun across the sky with a chariot each day. Used to be known as the titan Helios, who was unpopular and eventually merged with Apollo, who is usually seen as either a titan OR olympic god.'
     },
     {
         name: 'Chaos',
@@ -191,7 +191,7 @@ const teamMembers = [
         title: 'Creator Of All Things',
         domains: ['Creation', 'Void', 'Entropy'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: ''
+        otherinfo: 'The original being in Greek Mythology, believed to be responsible for the creation of the universe.'
     }
 
 ]
@@ -210,15 +210,19 @@ function generateTeamCards() {
         switch (member.classification.toLowerCase()) {
             case 'olympic':
                 backgroundColor = 'mediumaquamarine'
+                textColor = 'black'
                 break
             case 'chthonic':
                 backgroundColor = 'purple'
+                textColor = 'black'
                 break
             case 'titan':
                 backgroundColor = "maroon"
+                textColor = 'black'
                 break
             default:
                 backgroundColor = "white"
+                textColor = 'black'
         }
 
 
@@ -233,6 +237,7 @@ function generateTeamCards() {
 
         for (let i = 0; i < card.children.length; i++) {
             card.children[i].style.backgroundColor = backgroundColor
+            card.children[i].style.color = textColor
         }
 
         teamCardsContainer.appendChild(card)
@@ -241,6 +246,16 @@ function generateTeamCards() {
 }
 
 window.onload = generateTeamCards()
+
+function getDomains(member) {
+    let finalText
+    for (let i = 0; i < member.length; i++) {
+        if (finalText) {
+            finalText = `${finalText}, ${member[i]}`
+        } else { finalText = `${member[i]}` }
+    }
+    return finalText
+}
 
 function flipCard(cardNumber) {
     document.getElementById(`card-container${cardNumber}`).classList.add('flip-card')
@@ -254,7 +269,10 @@ function flipCard(cardNumber) {
                 Name: ${member.name}
             </div>
             <div class="card-body">
-                <p>Age: ${member.age}</p>
+                <p>Classification: ${member.classification} <br>
+                Title: ${member.title} <br>
+                God of: ${getDomains(member.domains)} <br>
+                Extra Info: ${member.otherinfo}</p>
             </div>`
     }, 1000);
 }
@@ -272,4 +290,8 @@ function unflipCard(cardNumber) {
             <img src="${member.image}" class="w-100">
         </div>`
     }, 1000);
+}
+
+function sortBy(type) {
+
 }
