@@ -17,19 +17,62 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     </head>
 
     <body>
-        <header>
-            <!-- place navbar here -->
+        <header class="sticky-top mb-2">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Greek Pantheon</a>
+                        <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 400px">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Sort By
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item pointer"
+                                        onclick="unsort();">None</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                    <li><a class="dropdown-item pointer"
+                                            onclick="sortBy('olympic');">Olympic</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider" />
+                                    </li>
+                                    <li><a class="dropdown-item pointer"
+                                            onclick="sortBy('chthonic');">Chthonic</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider" />
+                                    </li>
+                                    <li><a class="dropdown-item pointer"
+                                            onclick="sortBy('titan');">Titans</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                </div>
+            </nav>
         </header>
         <main>
             <div class="container">
                 <div class="row" id="teamCards"></div>
             </div>
         </main>
-        <footer>
-            <!-- place footer here -->
+        <footer class="bg-dark text-light text-center mt-1" id="footer">
+            <div class="container p-2 pb-2 pb-0">
+                <a class="btn text-white btn-floating m-1" style="background-color: #333333;"
+                    href="https://github.com/J-Groesbeck/May-Monthly-Website" target="_blank" role="button"><i
+                        class="fab fa-github"></i></a>
+                <a class="btn text-white btn-floating m-1" style="background-color: #333333;"
+                    href="https://j-groesbeck.github.io/Gallery/" target="_blank" role="button"><i
+                        class="fab fa-github"></i> Gallery</a>
+            </div>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
         

@@ -7,7 +7,9 @@ const teamMembers = [
         title: 'King Of The Gods',
         domains: ['Lightning', 'Sky', 'Order'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: `One of the Great Three gods, and leader of the Olympic gods. He is also known to have had several affairs, much to Hera's anger.`
+        otherinfo: `One of the Great Three gods, and leader of the Olympic gods. He is also known to have had several affairs, much to Hera's anger.`,
+        id: 'card0',
+        number: 0
     },
     {
         name: 'Hades',
@@ -15,7 +17,9 @@ const teamMembers = [
         title: 'King Of The Dead',
         domains: ['The Dead', 'The Underworld', 'Funerals'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: 'One of the Great Three gods, the ruler of the underworld, and leader of the Chthonic gods. Notably, however, there are many Chthonic gods who do not follow his rule, as the underworld is a vast place.'
+        otherinfo: 'One of the Great Three gods, the ruler of the underworld, and leader of the Chthonic gods. Notably, however, there are many Chthonic gods who do not follow his rule, as the underworld is a vast place.',
+        id: 'card1',
+        number: 1
     },
     {
         name: 'Poseidon',
@@ -23,7 +27,9 @@ const teamMembers = [
         title: 'King Of The Oceans',
         domains: ['Water', 'Storms', 'Horses'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: 'One of the Great Three gods, holding power over the vast oceans. He is the god of horses because he created them as a gift for a city deciding on their patron god.'
+        otherinfo: 'One of the Great Three gods, holding power over the vast oceans. He is the god of horses because he created them as a gift for a city deciding on their patron god.',
+        id: 'card2',
+        number: 2
     },
     {
         name: 'Nyx',
@@ -31,7 +37,9 @@ const teamMembers = [
         title: 'Personification Of Night',
         domains: ['Night', 'Darkness'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: 'Oftentimes considered one of the most powerful gods, she is a primordial god who strikes fear into the hearts of those who even just hear her name.'
+        otherinfo: 'Oftentimes considered one of the most powerful gods, she is a primordial god who strikes fear into the hearts of those who even just hear her name.',
+        id: 'card3',
+        number: 3
     },
     {
         name: 'Hera',
@@ -39,7 +47,9 @@ const teamMembers = [
         title: 'Queen Of The Gods',
         domains: ['Marriage', 'Womanhood', 'Family'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: 'She was actually tricked by Zeus into marrying him, after which he would cheat on her repeatedly. Stories of her revenge against him are commonplace in mythology.'
+        otherinfo: 'She was actually tricked by Zeus into marrying him, after which he would cheat on her repeatedly. Stories of her revenge against him are commonplace in mythology.',
+        id: 'card4',
+        number: 4
     },
     {
         name: 'Demeter',
@@ -47,7 +57,9 @@ const teamMembers = [
         title: 'The Fruitbearer',
         domains: ['Harvest', 'Fertility of the Earth', 'The Seasons'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: 'She represents the seasons through her cyclic grief over her daughter, Persephone. The greeks believed that the lack of plant growth in autumn & winter was caused by her grief while Persephone was in the underworld. '
+        otherinfo: 'She represents the seasons through her cyclic grief over her daughter, Persephone. The greeks believed that the lack of plant growth in autumn & winter was caused by her grief while Persephone was in the underworld. ',
+        id: 'card5',
+        number: 5
     },
     {
         name: 'Hestia',
@@ -55,7 +67,9 @@ const teamMembers = [
         title: 'Keeper Of Hearth And Home',
         domains: ['The Hearth', 'Sacred Fire', 'Sacrifice'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: 'Often disinterested with the affairs of the gods, she focused more on the people of Greece. She became the god of sacrifices when she swore to remain a maiden forever while Apollo and Poseidon were vying for her hand in marriage.'
+        otherinfo: 'Often disinterested with the affairs of the gods, she focused more on the people of Greece. She became the god of sacrifices when she swore to remain a maiden forever while Apollo and Poseidon were vying for her hand in marriage.',
+        id: 'card6',
+        number: 6
     },
     {
         name: 'Artemis',
@@ -63,7 +77,9 @@ const teamMembers = [
         title: 'Personification Of The Hunt',
         domains: ['Hunting', 'Wildlife', 'Nature'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: 'She, with her twin brother Apollo, hunted and killed the titan Tityus for sexually assaulting their mother. She also was known for her forbidden love with Orion, a mortal hunter she found interesting.'
+        otherinfo: 'She, with her twin brother Apollo, hunted and killed the titan Tityus for sexually assaulting their mother. She also was known for her forbidden love with Orion, a mortal hunter she found interesting.',
+        id: 'card7',
+        number: 7
     },
     {
         name: 'Ares',
@@ -71,7 +87,9 @@ const teamMembers = [
         title: 'Battle Incarnate',
         domains: ['War', 'Courage', 'Bloodlust'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: 'Worshipped often by the militaristic societies of Greece (like Sparta), he was often a disliked god. His most famous myth is his fight with Heracles, a result of Heracles killing his son.'
+        otherinfo: 'Worshipped often by the militaristic societies of Greece (like Sparta), he was often a disliked god. His most famous myth is his fight with Heracles, a result of Heracles killing his son.',
+        id: 'card8',
+        number: 8
     },
     {
         name: 'Athena',
@@ -79,7 +97,9 @@ const teamMembers = [
         title: 'Protector Of The People',
         domains: ['Wisdom', 'Strategy', 'Virginity'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: `She was presented as extraordinarily intelligent in myth, having been born fully formed from Zeus' forehead. She has many myths of cursing those who wronged her, like the story of Arachne.`
+        otherinfo: `She was presented as extraordinarily intelligent in myth, having been born fully formed from Zeus' forehead. She has many myths of cursing those who wronged her, like the story of Arachne.`,
+        id: 'card9',
+        number: 9
     },
     {
         name: 'Hermes',
@@ -87,7 +107,9 @@ const teamMembers = [
         title: 'Messenger Of The Gods',
         domains: ['Trade', 'Travel', 'Luck'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: ''
+        otherinfo: '',
+        id: 'card10',
+        number: 10
     },
     {
         name: 'Hephaestus',
@@ -95,7 +117,9 @@ const teamMembers = [
         title: 'The Celestial Artificer',
         domains: ['Fire', 'Forges', 'Blacksmithing'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: ''
+        otherinfo: '',
+        id: 'card11',
+        number: 11
     },
     {
         name: 'Aphrodite',
@@ -103,7 +127,9 @@ const teamMembers = [
         title: 'Embodiment Of Love',
         domains: ['Love', 'Beauty', 'Fertility'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: ''
+        otherinfo: '',
+        id: 'card12',
+        number: 12
     },
     {
         name: 'Dionysus',
@@ -111,7 +137,9 @@ const teamMembers = [
         title: 'Drunkenness Incarnate',
         domains: ['Wine', 'Festivity', 'Theatre'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: ''
+        otherinfo: '',
+        id: 'card13',
+        number: 13
     },
     {
         name: 'Persephone',
@@ -119,7 +147,9 @@ const teamMembers = [
         title: 'Queen Of The Underworld',
         domains: ['Spring', 'Vegetation', 'The Dead'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: ''
+        otherinfo: '',
+        id: 'card14',
+        number: 14
     },
     {
         name: 'Hecate',
@@ -127,7 +157,9 @@ const teamMembers = [
         title: 'Witch Of The Crosswords',
         domains: ['Magic', 'Witchcraft', 'Necromancy'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: 'Although technically a Titan, she is often viewed more as chthonic, due to her lack of association with other titans.'
+        otherinfo: 'Although technically a Titan, she is often viewed more as chthonic, due to her lack of association with other titans.',
+        id: 'card15',
+        number: 15
     },
     {
         name: 'The Furies',
@@ -135,7 +167,9 @@ const teamMembers = [
         title: 'The Retributionists',
         domains: ['Jealousy', 'Anger', 'Avengeance'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: 'A group composed of three seperate gods- Megaera (Jealousy), Allecto (Anger), and Tisiphone (Avengeance)'
+        otherinfo: 'A group composed of three seperate gods- Megaera (Jealousy), Allecto (Anger), and Tisiphone (Avengeance)',
+        id: 'card16',
+        number: 16
     },
     {
         name: 'Nemesis',
@@ -143,7 +177,9 @@ const teamMembers = [
         title: 'Vengeance Incarnate',
         domains: ['Vengeance', 'Retribution', 'Resentment'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: ''
+        otherinfo: '',
+        id: 'card17',
+        number: 17
     },
     {
         name: 'Thanatos',
@@ -151,7 +187,9 @@ const teamMembers = [
         title: 'Personification Of Death',
         domains: ['Death'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: ''
+        otherinfo: '',
+        id: 'card18',
+        number: 18
     },
     {
         name: 'Hypnos',
@@ -159,7 +197,9 @@ const teamMembers = [
         title: 'The Sacred Sleeper',
         domains: ['Sleep', 'Dreams', 'Hallucinations'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: ''
+        otherinfo: '',
+        id: 'card19',
+        number: 19
     },
     {
         name: 'Chronos',
@@ -167,7 +207,9 @@ const teamMembers = [
         title: 'King Of The Titans',
         domains: ['Time', 'Cycles', 'Evil'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: 'Considered by far the most evil in Greek Mythology, he has waged war with the other Gods, only being defeated with the combined power of the Great Three.'
+        otherinfo: 'Considered by far the most evil in Greek Mythology, he has waged war with the other Gods, only being defeated with the combined power of the Great Three.',
+        id: 'card20',
+        number: 20
     },
     {
         name: 'Selene',
@@ -175,7 +217,9 @@ const teamMembers = [
         title: 'Bringer Of Nighttime',
         domains: ['The Moon', 'Radiance', 'Insanity'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: 'She drags the Moon across the sky with a chariot each night.'
+        otherinfo: 'She drags the Moon across the sky with a chariot each night.',
+        id: 'card21',
+        number: 21
     },
     {
         name: 'Helios/Apollo',
@@ -183,7 +227,9 @@ const teamMembers = [
         title: 'Bringer Of Daytime',
         domains: ['The Sun', 'Archery', 'Prophecy'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: 'He drags the Sun across the sky with a chariot each day. Used to be known as the titan Helios, who was unpopular and eventually merged with Apollo, who is usually seen as either a titan OR olympic god.'
+        otherinfo: 'He drags the Sun across the sky with a chariot each day. Used to be known as the titan Helios, who was unpopular and eventually merged with Apollo, who is usually seen as either a titan or olympic god.',
+        id: 'card22',
+        number: 22
     },
     {
         name: 'Chaos',
@@ -191,9 +237,10 @@ const teamMembers = [
         title: 'Creator Of All Things',
         domains: ['Creation', 'Void', 'Entropy'],
         image: 'imgs/placeholder.jpg',
-        otherinfo: 'The original being in Greek Mythology, believed to be responsible for the creation of the universe.'
+        otherinfo: 'The original being in Greek Mythology, believed to be responsible for the creation of the universe. Included with titans on this list due to its nature of being the one to create them.',
+        id: 'card23',
+        number: 23
     }
-
 ]
 
 //card generation
@@ -202,7 +249,7 @@ function generateTeamCards() {
     let i = 0
     teamMembers.forEach(member => {
         const card = document.createElement('div')
-        card.classList.add('col-12', 'col-md-6', 'col-lg-3', 'mb-1')
+        card.classList.add('col-12', 'col-md-6', 'col-lg-4', 'col-xl-3', 'mb-1')
         card.setAttribute("id", `card-container${i}`)
 
         //style card based on role
@@ -228,7 +275,7 @@ function generateTeamCards() {
 
 
         card.innerHTML = `
-        <div class="card h-100" id="card${i}" onmouseover="flipCard(${i})"">
+        <div class="card h-100" id="${member.id}" onmouseover="flipCard(${i})"">
             <div class="text-center p-1">
                 <h1>${member.name}</h1>
                 <img src="${member.image}" class="w-100">
@@ -293,5 +340,19 @@ function unflipCard(cardNumber) {
 }
 
 function sortBy(type) {
+    teamMembers.forEach(member => {
+        if (member.classification.toLowerCase() === type.toLowerCase()) {
+            document.getElementById(`card-container${member.number}`).classList.remove('d-none');
+        } else if (type.toLowerCase() === 'titan' && member.classification.toLowerCase() === 'progenitor') {
+            document.getElementById(`card-container${member.number}`).classList.remove('d-none');
+        } else {
+            document.getElementById(`card-container${member.number}`).classList.add('d-none');
+        }
+    });
+}
 
+function unsort() {
+    teamMembers.forEach(member => {
+        document.getElementById(`card-container${member.number}`).classList.remove('d-none');
+    });
 }
