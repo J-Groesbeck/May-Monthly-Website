@@ -6,7 +6,7 @@ const teamMembers = [
         classification: 'Olympic',
         title: 'King Of The Gods',
         domains: ['Lightning', 'Sky', 'Order'],
-        image: 'imgs/placeholder.jpg',
+        image: 'imgs/zeus.png',
         otherinfo: `One of the Great Three gods, and leader of the Olympic gods. He is also known to have had several affairs, much to Hera's anger.`,
         id: 'card0',
         number: 0
@@ -16,7 +16,7 @@ const teamMembers = [
         classification: 'Chthonic',
         title: 'King Of The Dead',
         domains: ['The Dead', 'The Underworld', 'Funerals'],
-        image: 'imgs/placeholder.jpg',
+        image: 'imgs/hades.png',
         otherinfo: 'One of the Great Three gods, the ruler of the underworld, and leader of the Chthonic gods. Notably, however, there are many Chthonic gods who do not follow his rule, as the underworld is a vast place.',
         id: 'card1',
         number: 1
@@ -26,7 +26,7 @@ const teamMembers = [
         classification: 'Olympic',
         title: 'King Of The Oceans',
         domains: ['Water', 'Storms', 'Horses'],
-        image: 'imgs/placeholder.jpg',
+        image: 'imgs/poseidon.png',
         otherinfo: 'One of the Great Three gods, holding power over the vast oceans. He is the god of horses because he created them as a gift for a city deciding on their patron god.',
         id: 'card2',
         number: 2
@@ -36,7 +36,7 @@ const teamMembers = [
         classification: 'Chthonic',
         title: 'Personification Of Night',
         domains: ['Night', 'Darkness'],
-        image: 'imgs/placeholder.jpg',
+        image: 'imgs/nyx.png',
         otherinfo: 'Oftentimes considered one of the most powerful gods, she is a primordial god who strikes fear into the hearts of those who even just hear her name.',
         id: 'card3',
         number: 3
@@ -56,7 +56,7 @@ const teamMembers = [
         classification: 'Olympic',
         title: 'The Fruitbearer',
         domains: ['Harvest', 'Fertility of the Earth', 'The Seasons'],
-        image: 'imgs/placeholder.jpg',
+        image: 'imgs/demeter.png',
         otherinfo: 'She represents the seasons through her cyclic grief over her daughter, Persephone. The greeks believed that the lack of plant growth in autumn & winter was caused by her grief while Persephone was in the underworld. ',
         id: 'card5',
         number: 5
@@ -76,7 +76,7 @@ const teamMembers = [
         classification: 'Olympic',
         title: 'Personification Of The Hunt',
         domains: ['Hunting', 'Wildlife', 'Nature'],
-        image: 'imgs/placeholder.jpg',
+        image: 'imgs/artemis.png',
         otherinfo: 'She, with her twin brother Apollo, hunted and killed the titan Tityus for sexually assaulting their mother. She also was known for her forbidden love with Orion, a mortal hunter she found interesting.',
         id: 'card7',
         number: 7
@@ -86,7 +86,7 @@ const teamMembers = [
         classification: 'Olympic',
         title: 'Battle Incarnate',
         domains: ['War', 'Courage', 'Bloodlust'],
-        image: 'imgs/placeholder.jpg',
+        image: 'imgs/ares.png',
         otherinfo: 'Worshipped often by the militaristic societies of Greece (like Sparta), he was often a disliked god. His most famous myth is his fight with Heracles, a result of Heracles killing his son.',
         id: 'card8',
         number: 8
@@ -96,7 +96,7 @@ const teamMembers = [
         classification: 'Olympic',
         title: 'Protector Of The People',
         domains: ['Wisdom', 'Strategy', 'Virginity'],
-        image: 'imgs/placeholder.jpg',
+        image: 'imgs/athena.png',
         otherinfo: `She was presented as extraordinarily intelligent in myth, having been born fully formed from Zeus' forehead. She has many myths of cursing those who wronged her, like the story of Arachne.`,
         id: 'card9',
         number: 9
@@ -106,7 +106,7 @@ const teamMembers = [
         classification: 'Olympic',
         title: 'Messenger Of The Gods',
         domains: ['Trade', 'Travel', 'Luck'],
-        image: 'imgs/placeholder.jpg',
+        image: 'imgs/hermes.png',
         otherinfo: '',
         id: 'card10',
         number: 10
@@ -116,7 +116,7 @@ const teamMembers = [
         classification: 'Olympic',
         title: 'The Celestial Artificer',
         domains: ['Fire', 'Forges', 'Blacksmithing'],
-        image: 'imgs/placeholder.jpg',
+        image: 'imgs/hephaestus.png',
         otherinfo: '',
         id: 'card11',
         number: 11
@@ -126,7 +126,7 @@ const teamMembers = [
         classification: 'Olympic',
         title: 'Embodiment Of Love',
         domains: ['Love', 'Beauty', 'Fertility'],
-        image: 'imgs/placeholder.jpg',
+        image: 'imgs/aphrodite.png',
         otherinfo: '',
         id: 'card12',
         number: 12
@@ -136,7 +136,7 @@ const teamMembers = [
         classification: 'Olympic',
         title: 'Drunkenness Incarnate',
         domains: ['Wine', 'Festivity', 'Theatre'],
-        image: 'imgs/placeholder.jpg',
+        image: 'imgs/dionysus.png',
         otherinfo: '',
         id: 'card13',
         number: 13
