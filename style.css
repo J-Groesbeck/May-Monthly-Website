@@ -9,7 +9,7 @@
     50% {
         transform: rotateY(90deg);
     }
-    50.1% {
+    50.0000000000001% {
         transform: rotateY(270deg);
     }
     100% {
@@ -28,7 +28,7 @@
     50% {
         transform: rotateY(270deg);
     }
-    50.1% {
+    50.0000000000001% {
         transform: rotateY(90deg);
     }
     100% {

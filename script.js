@@ -37,7 +37,7 @@ const teamMembers = [
         title: 'Personification Of Night',
         domains: ['Night', 'Darkness'],
         image: 'imgs/nyx.png',
-        otherinfo: 'Oftentimes considered one of the most powerful gods, she is a primordial god who strikes fear into the hearts of those who even just hear her name.',
+        otherinfo: 'Considered one of the most powerful gods, she is a primordial goddess who strikes fear into the hearts of those who even just hear her name.',
         id: 'card3',
         number: 3
     },
@@ -46,7 +46,7 @@ const teamMembers = [
         classification: 'Olympic',
         title: 'Queen Of The Gods',
         domains: ['Marriage', 'Womanhood', 'Family'],
-        image: 'imgs/placeholder.jpg',
+        image: 'imgs/hera.png',
         otherinfo: 'She was actually tricked by Zeus into marrying him, after which he would cheat on her repeatedly. Stories of her revenge against him are commonplace in mythology.',
         id: 'card4',
         number: 4
@@ -66,7 +66,7 @@ const teamMembers = [
         classification: 'Olympic',
         title: 'Keeper Of Hearth And Home',
         domains: ['The Hearth', 'Sacred Fire', 'Sacrifice'],
-        image: 'imgs/placeholder.jpg',
+        image: 'imgs/hestia.png',
         otherinfo: 'Often disinterested with the affairs of the gods, she focused more on the people of Greece. She became the god of sacrifices when she swore to remain a maiden forever while Apollo and Poseidon were vying for her hand in marriage.',
         id: 'card6',
         number: 6
@@ -146,7 +146,7 @@ const teamMembers = [
         classification: 'Chthonic',
         title: 'Queen Of The Underworld',
         domains: ['Spring', 'Vegetation', 'The Dead'],
-        image: 'imgs/placeholder.jpg',
+        image: 'imgs/persephone.png',
         otherinfo: '',
         id: 'card14',
         number: 14
@@ -156,7 +156,7 @@ const teamMembers = [
         classification: 'Chthonic',
         title: 'Witch Of The Crosswords',
         domains: ['Magic', 'Witchcraft', 'Necromancy'],
-        image: 'imgs/placeholder.jpg',
+        image: 'imgs/hecate.png',
         otherinfo: 'Although technically a Titan, she is often viewed more as chthonic, due to her lack of association with other titans.',
         id: 'card15',
         number: 15
@@ -166,8 +166,8 @@ const teamMembers = [
         classification: 'Chthonic',
         title: 'The Retributionists',
         domains: ['Jealousy', 'Anger', 'Avengeance'],
-        image: 'imgs/placeholder.jpg',
-        otherinfo: 'A group composed of three seperate gods- Megaera (Jealousy), Allecto (Anger), and Tisiphone (Avengeance)',
+        image: 'imgs/megaera.png',
+        otherinfo: 'A group composed of three separate gods- Megaera (Jealousy), Alecto (Anger), and Tisiphone (Avengeance)',
         id: 'card16',
         number: 16
     },
@@ -176,7 +176,7 @@ const teamMembers = [
         classification: 'Chthonic',
         title: 'Vengeance Incarnate',
         domains: ['Vengeance', 'Retribution', 'Resentment'],
-        image: 'imgs/placeholder.jpg',
+        image: 'imgs/nemesis.png',
         otherinfo: '',
         id: 'card17',
         number: 17
@@ -186,7 +186,7 @@ const teamMembers = [
         classification: 'Chthonic',
         title: 'Personification Of Death',
         domains: ['Death'],
-        image: 'imgs/placeholder.jpg',
+        image: 'imgs/thanatos.png',
         otherinfo: '',
         id: 'card18',
         number: 18
@@ -196,7 +196,7 @@ const teamMembers = [
         classification: 'Chthonic',
         title: 'The Sacred Sleeper',
         domains: ['Sleep', 'Dreams', 'Hallucinations'],
-        image: 'imgs/placeholder.jpg',
+        image: 'imgs/hypnos.png',
         otherinfo: '',
         id: 'card19',
         number: 19
@@ -206,7 +206,7 @@ const teamMembers = [
         classification: 'Titan',
         title: 'King Of The Titans',
         domains: ['Time', 'Cycles', 'Evil'],
-        image: 'imgs/placeholder.jpg',
+        image: 'imgs/chronos.png',
         otherinfo: 'Considered by far the most evil in Greek Mythology, he has waged war with the other Gods, only being defeated with the combined power of the Great Three.',
         id: 'card20',
         number: 20
@@ -216,7 +216,7 @@ const teamMembers = [
         classification: 'Titan',
         title: 'Bringer Of Nighttime',
         domains: ['The Moon', 'Radiance', 'Insanity'],
-        image: 'imgs/placeholder.jpg',
+        image: 'imgs/selene.png',
         otherinfo: 'She drags the Moon across the sky with a chariot each night.',
         id: 'card21',
         number: 21
@@ -226,7 +226,7 @@ const teamMembers = [
         classification: 'Titan',
         title: 'Bringer Of Daytime',
         domains: ['The Sun', 'Archery', 'Prophecy'],
-        image: 'imgs/placeholder.jpg',
+        image: 'imgs/apollo.png',
         otherinfo: 'He drags the Sun across the sky with a chariot each day. Used to be known as the titan Helios, who was unpopular and eventually merged with Apollo, who is usually seen as either a titan or olympic god.',
         id: 'card22',
         number: 22
@@ -236,7 +236,7 @@ const teamMembers = [
         classification: 'Progenitor',
         title: 'Creator Of All Things',
         domains: ['Creation', 'Void', 'Entropy'],
-        image: 'imgs/placeholder.jpg',
+        image: 'imgs/chaos.png',
         otherinfo: 'The original being in Greek Mythology, believed to be responsible for the creation of the universe. Included with titans on this list due to its nature of being the one to create them.',
         id: 'card23',
         number: 23
@@ -304,7 +304,24 @@ function getDomains(member) {
     return finalText
 }
 
+let furyPictures = ['imgs/megaera.png', 'imgs/alecto.png', 'imgs/tisiphone.png']
+let furyNumber = 0
+let chaosPictures = ['imgs/chaos.png', 'imgs/chaos2.png']
+let chaosNumber = 0
+
 function flipCard(cardNumber) {
+    if (furyNumber < 2) {
+        furyNumber = furyNumber + 1
+    } else {
+        furyNumber = 0
+    }
+    teamMembers[16].image = `${furyPictures[furyNumber]}`
+    if (chaosNumber < 1) {
+        chaosNumber = chaosNumber + 1
+    } else {
+        chaosNumber = 0
+    }
+    teamMembers[23].image = `${chaosPictures[chaosNumber]}`
     document.getElementById(`card-container${cardNumber}`).classList.add('flip-card')
     document.getElementById(`card-container${cardNumber}`).classList.remove('unflip-card')
     document.getElementById(`card${cardNumber}`).setAttribute("onmouseover", "")
@@ -316,9 +333,9 @@ function flipCard(cardNumber) {
                 Name: ${member.name}
             </div>
             <div class="card-body">
-                <p>Classification: ${member.classification} <br>
-                Title: ${member.title} <br>
-                God of: ${getDomains(member.domains)} <br>
+                <p class="mb-0">Classification: ${member.classification} <br><br class="d-lg-none">
+                Title: ${member.title} <br><br class="d-lg-none">
+                God of: ${getDomains(member.domains)} <br><br class="d-lg-none">
                 Extra Info: ${member.otherinfo}</p>
             </div>`
     }, 1000);
