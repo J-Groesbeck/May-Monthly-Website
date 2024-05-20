@@ -104,10 +104,10 @@ const teamMembers = [
     {
         name: 'Hermes',
         classification: 'Olympic',
-        title: 'Messenger Of The Gods',
+        title: 'Herald Of The Gods',
         domains: ['Trade', 'Travel', 'Luck'],
         image: 'imgs/hermes.png',
-        otherinfo: '',
+        otherinfo: 'Known for his ability to travel anywhere in blinding speeds, he often acting as a messenger of the gods. He was seen as kind and caring, with one his myths involving helping perseus kill medusa by giving him his winged sandals.',
         id: 'card10',
         number: 10
     },
@@ -117,7 +117,7 @@ const teamMembers = [
         title: 'The Celestial Artificer',
         domains: ['Fire', 'Forges', 'Blacksmithing'],
         image: 'imgs/hephaestus.png',
-        otherinfo: '',
+        otherinfo: 'Born lame, he was cast off of olympus by his parents. This led him to work in solitude, perfecting his craft as a blacksmith, coming to create all of the most powerful weapons wielded by the god. He was invited back to olympus by dionysus.',
         id: 'card11',
         number: 11
     },
@@ -127,17 +127,17 @@ const teamMembers = [
         title: 'Embodiment Of Love',
         domains: ['Love', 'Beauty', 'Fertility'],
         image: 'imgs/aphrodite.png',
-        otherinfo: '',
+        otherinfo: 'Being the manifestation of beauty led her to be highly sought after by the other gods, causing Zeus to marry her to Hephaestus to end the conflict. She was frequently unfaithful, and generally seen as a jealous god.',
         id: 'card12',
         number: 12
     },
     {
         name: 'Dionysus',
         classification: 'Olympic',
-        title: 'Drunkenness Incarnate',
+        title: 'Celebration Incarnate',
         domains: ['Wine', 'Festivity', 'Theatre'],
         image: 'imgs/dionysus.png',
-        otherinfo: '',
+        otherinfo: 'Known for choosing punishments on a whim, he would often be angered which would lead him to punishing mortals in ways like turning them into dolphins. However, he also in extreme anger, would cause them to go mad.',
         id: 'card13',
         number: 13
     },
@@ -147,7 +147,7 @@ const teamMembers = [
         title: 'Queen Of The Underworld',
         domains: ['Spring', 'Vegetation', 'The Dead'],
         image: 'imgs/persephone.png',
-        otherinfo: '',
+        otherinfo: 'On a trip to the underworld, she ate half of a pomegranate, which cursed her to stay in the underworld for half of each year. She would eventually be married to Hades, and her traversal between the living and dead realms is believed to be what causes the change of the seasons.',
         id: 'card14',
         number: 14
     },
@@ -157,7 +157,7 @@ const teamMembers = [
         title: 'Witch Of The Crosswords',
         domains: ['Magic', 'Witchcraft', 'Necromancy'],
         image: 'imgs/hecate.png',
-        otherinfo: 'Although technically a Titan, she is often viewed more as chthonic, due to her lack of association with other titans.',
+        otherinfo: 'Although technically a Titan, she is often viewed more as chthonic, due to her lack of association with other titans. She presides over magic, her incantations powerful enough to bend the fates themselves.',
         id: 'card15',
         number: 15
     },
@@ -177,7 +177,7 @@ const teamMembers = [
         title: 'Vengeance Incarnate',
         domains: ['Vengeance', 'Retribution', 'Resentment'],
         image: 'imgs/nemesis.png',
-        otherinfo: '',
+        otherinfo: 'She presides over the scales of good and evil, traveling quickly to wherever the balance has been tipped in order to enact the proper vengeance to balance them once more.',
         id: 'card17',
         number: 17
     },
@@ -187,7 +187,7 @@ const teamMembers = [
         title: 'Personification Of Death',
         domains: ['Death'],
         image: 'imgs/thanatos.png',
-        otherinfo: '',
+        otherinfo: 'Holding an inverted torch and a sword of immense power, he represented death, appearing to take away the deceased to the underworld.',
         id: 'card18',
         number: 18
     },
@@ -197,7 +197,7 @@ const teamMembers = [
         title: 'The Sacred Sleeper',
         domains: ['Sleep', 'Dreams', 'Hallucinations'],
         image: 'imgs/hypnos.png',
-        otherinfo: '',
+        otherinfo: 'He embodied sleep itself, able to control others and lull them into a deep sleep, powerful enough to even put down other gods (if only temporarily).',
         id: 'card19',
         number: 19
     },
@@ -261,7 +261,7 @@ function generateTeamCards() {
                 break
             case 'chthonic':
                 backgroundColor = 'purple'
-                textColor = 'black'
+                textColor = 'white'
                 break
             case 'titan':
                 backgroundColor = "maroon"
